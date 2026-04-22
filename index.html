@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FOSS Affiliate Tools Comparison</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-badge">Open Source</div>
+      <h1>FOSS Affiliate Tools</h1>
+      <p class="header-sub">A deep comparison of Mautic, Raider, and Weferral for self-hosted affiliate programs</p>
+      <div class="header-meta">
+        <span>3 tools compared</span>
+        <span class="dot">·</span>
+        <span>6 feature categories</span>
+        <span class="dot">·</span>
+        <span>Updated April 2026</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- TOOL CARDS -->
+  <section class="section">
+    <div class="container">
+      <div class="tool-cards">
+
+        <div class="tool-card" data-tool="mautic">
+          <div class="tool-card-header mautic-bg">
+            <div class="tool-icon">M</div>
+            <div>
+              <div class="tool-name">Mautic</div>
+              <div class="tool-tagline">Marketing Automation Suite</div>
+            </div>
+          </div>
+          <div class="tool-card-body">
+            <div class="tool-stat"><span class="stat-label">License</span><span class="badge badge-green">Apache 2.0</span></div>
+            <div class="tool-stat"><span class="stat-label">Language</span><span class="badge badge-gray">PHP</span></div>
+            <div class="tool-stat"><span class="stat-label">Focus</span><span>Marketing Automation</span></div>
+            <div class="tool-stat"><span class="stat-label">Affiliate Native</span><span class="badge badge-yellow">Via Plugins</span></div>
+            <div class="tool-stat"><span class="stat-label">Setup Difficulty</span><span class="score-bar"><span class="bar-fill bar-hard" style="width:80%"></span></span></div>
+            <div class="overall-score">
+              <span class="score-label">Overall Score</span>
+              <span class="score-value mautic-color">7.2<span class="score-max">/10</span></span>
+            </div>
+            <a href="https://mautic.org" target="_blank" class="tool-link">mautic.org ↗</a>
+          </div>
+        </div>
+
+        <div class="tool-card" data-tool="raider">
+          <div class="tool-card-header raider-bg">
+            <div class="tool-icon">R</div>
+            <div>
+              <div class="tool-name">Raider</div>
+              <div class="tool-tagline">Purpose-Built Affiliate Dashboard</div>
+            </div>
+          </div>
+          <div class="tool-card-body">
+            <div class="tool-stat"><span class="stat-label">License</span><span class="badge badge-green">MPL-2.0</span></div>
+            <div class="tool-stat"><span class="stat-label">Language</span><span class="badge badge-orange">Rust</span></div>
+            <div class="tool-stat"><span class="stat-label">Focus</span><span>Affiliate Tracking</span></div>
+            <div class="tool-stat"><span class="stat-label">Affiliate Native</span><span class="badge badge-green">Yes — Core Feature</span></div>
+            <div class="tool-stat"><span class="stat-label">Setup Difficulty</span><span class="score-bar"><span class="bar-fill bar-medium" style="width:50%"></span></span></div>
+            <div class="overall-score">
+              <span class="score-label">Overall Score</span>
+              <span class="score-value raider-color">7.8<span class="score-max">/10</span></span>
+            </div>
+            <a href="https://github.com/valeriansaliou/raider" target="_blank" class="tool-link">github.com/valeriansaliou/raider ↗</a>
+          </div>
+        </div>
+
+        <div class="tool-card" data-tool="weferral">
+          <div class="tool-card-header weferral-bg">
+            <div class="tool-icon">W</div>
+            <div>
+              <div class="tool-name">Weferral</div>
+              <div class="tool-tagline">Referral & Affiliate Management</div>
+            </div>
+          </div>
+          <div class="tool-card-body">
+            <div class="tool-stat"><span class="stat-label">License</span><span class="badge badge-green">MIT</span></div>
+            <div class="tool-stat"><span class="stat-label">Language</span><span class="badge badge-blue">Node.js / React</span></div>
+            <div class="tool-stat"><span class="stat-label">Focus</span><span>Referral Management</span></div>
+            <div class="tool-stat"><span class="stat-label">Affiliate Native</span><span class="badge badge-green">Yes — Core Feature</span></div>
+            <div class="tool-stat"><span class="stat-label">Setup Difficulty</span><span class="score-bar"><span class="bar-fill bar-easy" style="width:35%"></span></span></div>
+            <div class="overall-score">
+              <span class="score-label">Overall Score</span>
+              <span class="score-value weferral-color">6.4<span class="score-max">/10</span></span>
+            </div>
+            <a href="https://github.com/WeferralHq/weferral" target="_blank" class="tool-link">github.com/WeferralHq/weferral ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <section class="filters-section">
+    <div class="container">
+      <div class="filters-inner">
+        <div class="filters-group">
+          <label class="filter-label">Team Size</label>
+          <div class="filter-buttons" id="team-filter">
+            <button class="filter-btn active" data-filter="all" data-group="team">All</button>
+            <button class="filter-btn" data-filter="solo" data-group="team">Solo / Indie</button>
+            <button class="filter-btn" data-filter="small" data-group="team">Small Team (2–20)</button>
+            <button class="filter-btn" data-filter="enterprise" data-group="team">Enterprise (20+)</button>
+          </div>
+        </div>
+        <div class="filters-group">
+          <label class="filter-label">Technical Skill Level</label>
+          <div class="filter-buttons" id="skill-filter">
+            <button class="filter-btn active" data-filter="all" data-group="skill">All</button>
+            <button class="filter-btn" data-filter="beginner" data-group="skill">Beginner</button>
+            <button class="filter-btn" data-filter="intermediate" data-group="skill">Intermediate</button>
+            <button class="filter-btn" data-filter="advanced" data-group="skill">Advanced</button>
+          </div>
+        </div>
+        <div class="filters-group">
+          <label class="filter-label">Sort Features By</label>
+          <div class="filter-buttons" id="sort-filter">
+            <button class="filter-btn active" data-sort="category">Category</button>
+            <button class="filter-btn" data-sort="mautic">Mautic Score</button>
+            <button class="filter-btn" data-sort="raider">Raider Score</button>
+            <button class="filter-btn" data-sort="weferral">Weferral Score</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECOMMENDATION BANNER -->
+  <section class="recommendation-section" id="recommendation-banner">
+    <div class="container">
+      <div class="recommendation-box" id="rec-box">
+        <div class="rec-icon">💡</div>
+        <div class="rec-text" id="rec-text">Select filters above to get a personalized recommendation.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE COMPARISON TABLE -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Feature Breakdown</h2>
+      <p class="section-sub">Click any column header to sort. Scores are 1–10.</p>
+
+      <div class="table-wrap">
+        <table class="comparison-table" id="comparison-table">
+          <thead>
+            <tr>
+              <th class="th-category sortable" data-col="category" onclick="sortTable('category')">
+                Category <span class="sort-icon">↕</span>
+              </th>
+              <th class="th-feature">Feature</th>
+              <th class="th-tool sortable mautic-header" onclick="sortTable('mautic')">
+                <span class="th-tool-name">Mautic</span>
+                <span class="sort-icon">↕</span>
+              </th>
+              <th class="th-tool sortable raider-header" onclick="sortTable('raider')">
+                <span class="th-tool-name">Raider</span>
+                <span class="sort-icon">↕</span>
+              </th>
+              <th class="th-tool sortable weferral-header" onclick="sortTable('weferral')">
+                <span class="th-tool-name">Weferral</span>
+                <span class="sort-icon">↕</span>
+              </th>
+              <th class="th-notes">Notes</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELF-HOSTING DETAIL -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Self-Hosting Setup Guide</h2>
+      <p class="section-sub">Step-by-step complexity breakdown for each tool</p>
+      <div class="setup-cards">
+
+        <div class="setup-card">
+          <div class="setup-header mautic-bg">
+            <span class="setup-tool-name">Mautic</span>
+            <span class="complexity-badge badge-red">Complex</span>
+          </div>
+          <div class="setup-body">
+            <div class="setup-meta">
+              <div class="setup-meta-item"><span class="meta-label">Stack</span><span>PHP 8.0+, MySQL/MariaDB, Apache/Nginx, npm</span></div>
+              <div class="setup-meta-item"><span class="meta-label">Min RAM</span><span>2 GB (512 MB minimum)</span></div>
+              <div class="setup-meta-item"><span class="meta-label">Shared Hosting</span><span class="badge badge-red">Not Supported</span></div>
+              <div class="setup-meta-item"><span class="meta-label">Docker</span><span class="badge badge-green">Available</span></div>
+            </div>
+            <ol class="setup-steps">
+              <li>Provision a VPS (2+ GB RAM recommended) with Ubuntu/Debian</li>
+              <li>Install PHP 8.0+ with required extensions: <code>xml, mysql, imap, zip, intl, curl, gd, mbstring, bcmath</code></li>
+              <li>Install and configure MySQL/MariaDB database</li>
+              <li>Install Apache/Nginx and configure virtual host</li>
+              <li>Install Composer and Node.js/npm</li>
+              <li>Clone Mautic repo, run <code>composer install</code></li>
+              <li>Configure <code>.env.local</code> with DB credentials and mailer settings</li>
+              <li>Run <code>php bin/console mautic:install</code></li>
+              <li>Set up cron jobs for campaign processing and email sends</li>
+              <li>Configure SSL certificate (Let's Encrypt recommended)</li>
+            </ol>
+            <div class="setup-note">
+              <strong>Affiliate note:</strong> Mautic does not have native affiliate management. You'll need third-party plugins (e.g., AffiliateWP bridge) or custom webhook/API integrations for affiliate tracking and commission management.
+            </div>
+          </div>
+        </div>
+
+        <div class="setup-card">
+          <div class="setup-header raider-bg">
+            <span class="setup-tool-name">Raider</span>
+            <span class="complexity-badge badge-yellow">Moderate</span>
+          </div>
+          <div class="setup-body">
+            <div class="setup-meta">
+              <div class="setup-meta-item"><span class="meta-label">Stack</span><span>Rust binary, MySQL</span></div>
+              <div class="setup-meta-item"><span class="meta-label">Min RAM</span><span>256 MB (very lightweight)</span></div>
+              <div class="setup-meta-item"><span class="meta-label">Shared Hosting</span><span class="badge badge-red">Not Supported</span></div>
+              <div class="setup-meta-item"><span class="meta-label">Docker</span><span class="badge badge-green">Official Image</span></div>
+            </div>
+            <ol class="setup-steps">
+              <li>Pull official Docker image: <code>docker pull valeriansaliou/raider:v1.2.3</code></li>
+              <li>Or install via Debian APT repository (Debian 12 / Bookworm)</li>
+              <li>Or install via Cargo: <code>cargo install raider-server</code></li>
+              <li>Create and configure <code>config.cfg</code> — set secret keys, DB URL, SMTP, branding</li>
+              <li>Import <code>raider.sql</code> schema into MySQL database</li>
+              <li>Generate secret tokens with <code>openssl rand -base64 32</code></li>
+              <li>(Optional) Configure Fixer API key for multi-currency support</li>
+              <li>Start Raider: <code>./raider -c /path/to/config.cfg</code></li>
+              <li>Integrate payment reporting API into your backend</li>
+            </ol>
+            <div class="setup-note">
+              <strong>Integration note:</strong> Raider requires your backend to POST payment events to its Track API when conversions occur. This is minimal code — a single HTTP POST with payment amount and currency.
+            </div>
+          </div>
+        </div>
+
+        <div class="setup-card">
+          <div class="setup-header weferral-bg">
+            <span class="setup-tool-name">Weferral</span>
+            <span class="complexity-badge badge-blue">Easy–Moderate</span>
+          </div>
+          <div class="setup-body">
+            <div class="setup-meta">
+              <div class="setup-meta-item"><span class="meta-label">Stack</span><span>Node.js, React, PostgreSQL</span></div>
+              <div class="setup-meta-item"><span class="meta-label">Min RAM</span><span>512 MB</span></div>
+              <div class="setup-meta-item"><span class="meta-label">Shared Hosting</span><span class="badge badge-yellow">Possible (Node hosts)</span></div>
+              <div class="setup-meta-item"><span class="meta-label">Docker</span><span class="badge badge-yellow">Community Only</span></div>
+            </div>
+            <ol class="setup-steps">
+              <li>Clone frontend: <code>git clone https://github.com/WeferralHq/weferral.git</code></li>
+              <li><code>cd weferral && npm install && npm start</code></li>
+              <li>Clone backend API: <code>git clone https://github.com/WeferralHq/weferral-api.git</code></li>
+              <li><code>cd weferral-api && npm install && npm start</code></li>
+              <li>Visit <code>http://localhost:4100/setup</code> to initialize DB and admin user</li>
+              <li>Install Weferral Tracker JS snippet from separate tracker repo</li>
+              <li>For production: <code>npm run build:prod</code>, deploy <code>/dist</code> to static host</li>
+            </ol>
+            <div class="setup-note">
+              <strong>Maturity note:</strong> Weferral is marked "not production ready" in its own README. The plugin framework and RBAC are listed as "coming soon." Evaluate carefully for production workloads.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LEGEND -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Score Legend</h2>
+      <div class="legend-grid">
+        <div class="legend-item"><span class="score-pill score-excellent">9–10</span><span>Excellent — best-in-class</span></div>
+        <div class="legend-item"><span class="score-pill score-good">7–8</span><span>Good — solid implementation</span></div>
+        <div class="legend-item"><span class="score-pill score-fair">5–6</span><span>Fair — works but limited</span></div>
+        <div class="legend-item"><span class="score-pill score-poor">3–4</span><span>Poor — partial / workaround</span></div>
+        <div class="legend-item"><span class="score-pill score-none">1–2</span><span>Absent or non-functional</span></div>
+        <div class="legend-item"><span class="score-pill score-na">N/A</span><span>Not applicable / not tested</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Data sourced from <a href="https://mautic.org" target="_blank">mautic.org</a>, <a href="https://github.com/valeriansaliou/raider" target="_blank">github.com/valeriansaliou/raider</a>, and <a href="https://github.com/WeferralHq/weferral" target="_blank">github.com/WeferralHq/weferral</a> — April 2026</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
